@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #e1e4ae;">
+        <div style="text-align: center; background: rgb(178, 178, 169); padding: 40px; border-radius: 15px;">
+            <h1 style="color: blue; margin-bottom: 15px;">Calculator</h1>
+            <input type="text" id="displayBoard"
+                style="width: 320px; height: 50px; font-size: 22px; text-align: right; margin-bottom: 15px; border: 2px solid #afa6a6; border-radius: 10px; padding-right: 10px; background-color: white;"
+                disabled>
+            <table style="margin: auto; border-spacing: 15px; width: 300px;">
+                <tr>
+                    <td><button onclick="AllClear()"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px; background:#ffcccc;">AC</button>
+                    </td>
+                    <td><button onclick="backspace()"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">⌫</button></td>
+                    <td><button onclick="insert('/')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px; background:#ffe0b3;">÷</button>
+                    </td>
+                    <td><button onclick="insert('*')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px; background:#ffe0b3;">×</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('7')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">7</button></td>
+                    <td><button onclick="insert('8')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">8</button></td>
+                    <td><button onclick="insert('9')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">9</button></td>
+                    <td><button onclick="insert('-')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px; background:#ffe0b3;">−</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('4')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">4</button></td>
+                    <td><button onclick="insert('5')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">5</button></td>
+                    <td><button onclick="insert('6')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">6</button></td>
+                    <td><button onclick="insert('+')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px; background:#ffe0b3;">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('1')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">1</button></td>
+                    <td><button onclick="insert('2')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">2</button></td>
+                    <td><button onclick="insert('3')"
+                            style="width:50px; height:50px; font-size:18px; border-radius:10px;">3</button></td>
+                    <td rowspan="2"><button onclick="calculate()"
+                            style="width:50px; height:110px; font-size:20px; border-radius:10px; background:#b3e6b3;">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="insert('0')"
+                            style="width:110px; height:50px; font-size:18px; border-radius:10px;">0</button></td>
+                    <td><button onclick="insert('.')"
+                            style="width:50px; height:50px; font-size:20px; border-radius:10px;">.</button></td>
+                </tr>
+            </table>
+        </div>
+        <script src="calc.js"></script>
+    </body>
+</html>
